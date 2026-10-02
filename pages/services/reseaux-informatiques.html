@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Réseaux informatiques | Bersi</title>
+<meta name="description" content="Étude, câblage structuré, Wi-Fi professionnel et équipements actifs.">
+<meta property="og:title" content="Réseaux informatiques | Bersi">
+<meta property="og:description" content="Étude, câblage structuré, Wi-Fi professionnel et équipements actifs.">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="fr_FR">
+<meta name="theme-color" content="#0d2447">
+<link rel="icon" href="../../assets/img/favicon.svg" type="image/svg+xml">
+<script>try{var t=localStorage.getItem('bersi-theme');if(t==='dark'||t==='light')document.documentElement.setAttribute('data-theme',t);}catch(e){}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,400;0,500;0,600;0,700;1,500;1,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../../assets/css/style.css">
+</head>
+<body>
+<a class="skip" href="#main">Aller au contenu</a>
+
+<!-- Icônes (copie de assets/icons/sprite.svg) -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="i-support" viewBox="0 0 24 24"><path d="M3 14v-2a9 9 0 0 1 18 0v2"/><path d="M21 15a2 2 0 0 1-2 2h-1v-6h1a2 2 0 0 1 2 2z"/><path d="M3 15a2 2 0 0 0 2 2h1v-6H5a2 2 0 0 0-2 2z"/><path d="M19 17v1a3 3 0 0 1-3 3h-3"/></symbol>
+    <symbol id="i-code" viewBox="0 0 24 24"><rect x="2" y="4" width="15" height="12" rx="1.5"/><path d="M6 20h7"/><path d="M9.5 16v4"/><rect x="16" y="9" width="6" height="11" rx="1.2"/><path d="M18.5 17.5h1"/><path d="M7.5 8.5 5.5 10l2 1.5"/><path d="M11.5 8.5l2 1.5-2 1.5"/></symbol>
+    <symbol id="i-network" viewBox="0 0 24 24"><rect x="9" y="2.5" width="6" height="5" rx="1"/><rect x="2.5" y="16.5" width="6" height="5" rx="1"/><rect x="15.5" y="16.5" width="6" height="5" rx="1"/><path d="M12 7.5v4.5"/><path d="M5.5 16.5V12h13v4.5"/></symbol>
+    <symbol id="i-cctv" viewBox="0 0 24 24"><path d="M3.5 6.5 16 3l1.6 5.8-12.5 3.4z"/><path d="M17.2 7.3 20.5 8l-.6 2.3-2.4-.3"/><path d="M8 11.4l1.1 3.6"/><path d="M3 21v-5h6v-1"/></symbol>
+    <symbol id="i-megaphone" viewBox="0 0 24 24"><path d="M3 10v4a1 1 0 0 0 1 1h2l5 4V5L6 9H4a1 1 0 0 0-1 1z"/><path d="M15 9a3.5 3.5 0 0 1 0 6"/><path d="M18 6a8 8 0 0 1 0 12"/></symbol>
+    <symbol id="i-project" viewBox="0 0 24 24"><rect x="3" y="3.5" width="18" height="17" rx="2"/><path d="M3 8.5h18"/><path d="M7.5 12.5h4"/><path d="M7.5 16h7"/><path d="M15 12.5h1.5"/><path d="M8 2v3"/><path d="M16 2v3"/></symbol>
+    <symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 2.5 4 5.5v6c0 5 3.4 8.6 8 10 4.6-1.4 8-5 8-10v-6z"/><rect x="9" y="11" width="6" height="5" rx="1"/><path d="M10.2 11V9.5a1.8 1.8 0 0 1 3.6 0V11"/></symbol>
+    <symbol id="i-phone" viewBox="0 0 24 24"><path d="M21 16.4v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3-8.7A2 2 0 0 1 3.2 1.5h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L7.2 9.3a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></symbol>
+    <symbol id="i-mail" viewBox="0 0 24 24"><rect x="2.5" y="4.5" width="19" height="15" rx="2"/><path d="m3 6 9 7 9-7"/></symbol>
+    <symbol id="i-chat" viewBox="0 0 24 24"><path d="M20.5 11.6a8.4 8.4 0 0 1-12.3 7.5L3.5 20.5l1.4-4.6A8.4 8.4 0 1 1 20.5 11.6z"/><path d="M9 9.2c.2 2.6 2.4 4.9 5 5.2l.9-1.3-1.6-.9-.7.6a3.6 3.6 0 0 1-1.9-1.9l.6-.7-.9-1.6z"/></symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14"/><path d="m13 6 6 6-6 6"/></symbol>
+    <symbol id="i-chev" viewBox="0 0 24 24"><path d="m9 6 6 6-6 6"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="m8 12 3 3 5-6"/></symbol>
+    <symbol id="i-plus" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></symbol>
+    <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 7h16"/><path d="M4 12h16"/><path d="M4 17h16"/></symbol>
+    <symbol id="i-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></symbol>
+    <symbol id="i-moon" viewBox="0 0 24 24"><path d="M20.5 14.5A8.5 8.5 0 0 1 9.5 3.5a8.5 8.5 0 1 0 11 11z"/></symbol>
+    <symbol id="i-person" viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/></symbol>
+    <symbol id="i-docs" viewBox="0 0 24 24"><path d="M14 2.5H6.5a2 2 0 0 0-2 2v15a2 2 0 0 0 2 2h11a2 2 0 0 0 2-2V8z"/><path d="M14 2.5V8h5.5"/><path d="M8.5 13h7"/><path d="M8.5 17h5"/></symbol>
+    <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></symbol>
+    <symbol id="i-target" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1"/></symbol>
+    <symbol id="i-eye" viewBox="0 0 24 24"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/></symbol>
+    <symbol id="i-building" viewBox="0 0 24 24"><rect x="4" y="2.5" width="16" height="19" rx="1.5"/><path d="M9 21.5v-4h6v4"/><path d="M8 7h2M14 7h2M8 11h2M14 11h2"/></symbol>
+    <symbol id="i-store" viewBox="0 0 24 24"><path d="M3 9l2-5h14l2 5"/><path d="M3 9a3 3 0 0 0 6 0 3 3 0 0 0 6 0 3 3 0 0 0 6 0"/><path d="M5 12v9h14v-9"/><path d="M10 21v-5h4v5"/></symbol>
+    <symbol id="i-school" viewBox="0 0 24 24"><path d="M2 9l10-5 10 5-10 5z"/><path d="M6 11v5c3 2.5 9 2.5 12 0v-5"/><path d="M22 9v6"/></symbol>
+    <symbol id="i-landmark" viewBox="0 0 24 24"><path d="M3 21h18"/><path d="M5 18v-7M10 18v-7M14 18v-7M19 18v-7"/><path d="M3 9l9-6 9 6z"/></symbol>
+    <symbol id="i-health" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M12 8v8M8 12h8"/></symbol>
+    <symbol id="i-users" viewBox="0 0 24 24"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20a6.5 6.5 0 0 1 13 0"/><path d="M16 4.6a3.5 3.5 0 0 1 0 6.8"/><path d="M18 14.2a6.5 6.5 0 0 1 3.5 5.8"/></symbol>
+    <symbol id="i-bolt" viewBox="0 0 24 24"><path d="M13 2 4 14h7l-1 8 9-12h-7z"/></symbol>
+    <symbol id="i-solar" viewBox="0 0 24 24"><path d="M4 14 6 6h12l2 8z"/><path d="M5 10h14M10 6l-1 8M14 6l1 8"/><path d="M12 14v5M8 21h8"/></symbol>
+    <symbol id="i-wallet" viewBox="0 0 24 24"><path d="M19 7V5a1 1 0 0 0-1-1H5a2 2 0 0 0 0 4h15a1 1 0 0 1 1 1v4h-4a2 2 0 0 0 0 4h4v2a1 1 0 0 1-1 1H5a2 2 0 0 1-2-2V6"/></symbol>
+    <symbol id="i-chart" viewBox="0 0 24 24"><path d="M3 3v18h18"/><path d="M7 15l4-4 3 3 6-7"/></symbol>
+    <symbol id="i-drop" viewBox="0 0 24 24"><path d="M12 2.5s6.5 7 6.5 11.5a6.5 6.5 0 0 1-13 0C5.5 9.5 12 2.5 12 2.5z"/></symbol>
+    <symbol id="i-handshake" viewBox="0 0 24 24"><path d="m11 17 2 2a1 1 0 1 0 3-3"/><path d="m14 14 2.5 2.5a1 1 0 1 0 3-3l-3.9-3.9a3 3 0 0 0-4.2 0l-.9.9a1 1 0 1 1-3-3l2.8-2.8a5 5 0 0 1 5.6-1l.4.2a2 2 0 0 0 1.6 0L21 4"/><path d="m21 3 1 11h-2"/><path d="M3 3 2 14l6.5 6.5a1 1 0 1 0 3-3"/><path d="M3 4h8"/></symbol>
+    <symbol id="i-map" viewBox="0 0 24 24"><path d="M12 21s-7-6-7-11.5A7 7 0 0 1 19 9.5C19 15 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></symbol>
+  </defs>
+</svg>
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="../../index.html" aria-label="Bersi, accueil">
+      <img class="logo-navy" src="../../assets/img/logo-bersi.png" alt="Inform@ticien 3.0" width="232" height="96">
+      <img class="logo-white" src="../../assets/img/logo-bersi-blanc.png" width="232" height="96" alt="Inform@ticien 3.0">
+      <span class="brand-name">Bersi</span>
+    </a>
+    <nav class="nav" id="nav" aria-label="Navigation principale">
+      <a href="../../index.html" data-nav="home">Accueil</a>
+      <a href="../../pages/services.html" data-nav="services" aria-current="page">Services</a>
+      <a href="../../pages/solutions.html" data-nav="solutions">Solutions</a>
+      <a href="../../pages/partenaires.html" data-nav="partenaires">Partenaires</a>
+      <a href="../../pages/a-propos.html" data-nav="apropos">À propos</a>
+      <a href="../../pages/contact.html" data-nav="contact">Contact</a>
+    </nav>
+    <div class="tools">
+      <button class="icon-btn theme-btn" id="theme" type="button"><svg class="icon sun" aria-hidden="true"><use href="#i-moon"/></svg><svg class="icon moon" aria-hidden="true"><use href="#i-sun"/></svg></button>
+      <button class="icon-btn menu-btn" type="button" aria-expanded="false" aria-controls="nav" aria-label="Ouvrir le menu"><svg class="icon" aria-hidden="true"><use href="#i-menu"/></svg></button>
+      <a class="btn btn-primary call" href="tel:+242069626540"><svg class="icon" aria-hidden="true"><use href="#i-phone"/></svg>06 962 65 40</a>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+<section class="pagehead"><div class="wrap"><div><nav class="crumbs" aria-label="Fil d’Ariane"><a href="../../index.html">Accueil</a><svg class="icon" aria-hidden="true"><use href="#i-chev"/></svg><a href="../../pages/services.html">Services</a><svg class="icon" aria-hidden="true"><use href="#i-chev"/></svg><span>Réseaux informatiques</span></nav><h1 class="h1">Réseaux informatiques</h1><p class="intro">Un réseau bien conçu ne se remarque pas : il fonctionne. Nous étudions vos locaux et vos usages, dessinons l'architecture, puis installons un réseau propre, étiqueté et documenté.</p><div class="ctas"><a class="btn btn-primary" href="../../pages/contact.html?service=reseaux-informatiques">Demander un devis <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a><a class="btn btn-ghost" href="tel:+242069626540"><svg class="icon" aria-hidden="true"><use href="#i-phone"/></svg>06 962 65 40</a></div></div><div class="art"><svg class="il" viewBox="0 0 480 320" role="img" aria-label="Illustration : baie informatique avec panneau de brassage, switch, serveurs et câbles"><rect class="bg" width="480" height="320"/><rect class="soft" y="282" width="480" height="38"/><rect class="ink" x="150" y="24" width="176" height="262" rx="10"/><rect class="ink" x="160" y="284" width="16" height="10" rx="2"/><rect class="ink" x="300" y="284" width="16" height="10" rx="2"/><rect class="paper" x="164" y="40" width="148" height="30" rx="4"/><rect class="ink" x="172" y="47" width="8" height="6" rx="1"/><rect class="ink" x="172" y="57" width="8" height="6" rx="1"/><rect class="ink" x="184" y="47" width="8" height="6" rx="1"/><rect class="ink" x="184" y="57" width="8" height="6" rx="1"/><rect class="ink" x="196" y="47" width="8" height="6" rx="1"/><rect class="ink" x="196" y="57" width="8" height="6" rx="1"/><rect class="ink" x="208" y="47" width="8" height="6" rx="1"/><rect class="ink" x="208" y="57" width="8" height="6" rx="1"/><rect class="ink" x="220" y="47" width="8" height="6" rx="1"/><rect class="ink" x="220" y="57" width="8" height="6" rx="1"/><rect class="ink" x="232" y="47" width="8" height="6" rx="1"/><rect class="ink" x="232" y="57" width="8" height="6" rx="1"/><rect class="ink" x="244" y="47" width="8" height="6" rx="1"/><rect class="ink" x="244" y="57" width="8" height="6" rx="1"/><rect class="ink" x="256" y="47" width="8" height="6" rx="1"/><rect class="ink" x="256" y="57" width="8" height="6" rx="1"/><rect class="ink" x="268" y="47" width="8" height="6" rx="1"/><rect class="ink" x="268" y="57" width="8" height="6" rx="1"/><rect class="ink" x="280" y="47" width="8" height="6" rx="1"/><rect class="ink" x="280" y="57" width="8" height="6" rx="1"/><rect class="ink" x="292" y="47" width="8" height="6" rx="1"/><rect class="ink" x="292" y="57" width="8" height="6" rx="1"/><rect class="paper" x="164" y="78" width="148" height="30" rx="4"/><rect class="ink" x="172" y="88" width="8" height="10" rx="1"/><rect class="ink" x="184" y="88" width="8" height="10" rx="1"/><rect class="ink" x="196" y="88" width="8" height="10" rx="1"/><rect class="ink" x="208" y="88" width="8" height="10" rx="1"/><rect class="ink" x="220" y="88" width="8" height="10" rx="1"/><rect class="ink" x="232" y="88" width="8" height="10" rx="1"/><rect class="ink" x="244" y="88" width="8" height="10" rx="1"/><rect class="ink" x="256" y="88" width="8" height="10" rx="1"/><rect class="ink" x="268" y="88" width="8" height="10" rx="1"/><circle class="ok" cx="288" cy="88" r="3"/><circle class="ok" cx="298" cy="88" r="3"/><circle class="acc" cx="288" cy="98" r="3"/><circle class="soft" cx="298" cy="98" r="3"/><rect class="soft" x="164" y="116" width="148" height="14" rx="4"/><rect class="paper" x="164" y="138" width="148" height="30" rx="4"/><rect class="soft" x="174" y="146" width="80" height="4" rx="2"/><rect class="soft" x="174" y="156" width="80" height="4" rx="2"/><circle class="ok" cx="292" cy="153" r="3.5"/><circle class="acc" cx="280" cy="153" r="3.5"/><rect class="paper" x="164" y="176" width="148" height="30" rx="4"/><rect class="soft" x="174" y="184" width="80" height="4" rx="2"/><rect class="soft" x="174" y="194" width="80" height="4" rx="2"/><circle class="ok" cx="292" cy="191" r="3.5"/><circle class="acc" cx="280" cy="191" r="3.5"/><rect class="paper" x="164" y="216" width="148" height="56" rx="4"/><rect class="acc" x="176" y="228" width="44" height="20" rx="3"/><rect x="182" y="235" width="22" height="6" rx="2" fill="#fff"/><rect class="soft" x="236" y="230" width="62" height="4" rx="2"/><rect class="soft" x="236" y="240" width="48" height="4" rx="2"/><rect class="soft" x="236" y="250" width="56" height="4" rx="2"/><path class="s-acc" d="M312 50c60 0 50 70 110 70"/><path d="M312 60c80 0 60 112 110 112" fill="none" stroke="var(--text)" stroke-width="3" stroke-linecap="round"/><path class="s-acc" d="M312 93c40 0 40 130 110 130" style="opacity:.6"/><rect class="paper" x="420" y="106" width="34" height="28" rx="5"/><rect class="s-ink" x="420" y="106" width="34" height="28" rx="5"/><rect class="ink" x="430" y="115" width="14" height="10" rx="2"/><rect class="paper" x="420" y="158" width="34" height="28" rx="5"/><rect class="s-ink" x="420" y="158" width="34" height="28" rx="5"/><rect class="ink" x="430" y="167" width="14" height="10" rx="2"/><rect class="paper" x="420" y="209" width="34" height="28" rx="5"/><rect class="s-ink" x="420" y="209" width="34" height="28" rx="5"/><rect class="ink" x="430" y="218" width="14" height="10" rx="2"/><path d="M150 46c-40 0-46 20-60 40" fill="none" stroke="var(--text)" stroke-width="3" stroke-linecap="round"/><circle class="paper" cx="80" cy="104" r="26"/><circle class="s-ink" cx="80" cy="104" r="26"/><path class="s-acc" d="M66 102a20 20 0 0 1 28 0M72 109a11 11 0 0 1 16 0"/><circle class="acc" cx="80" cy="116" r="2.5"/><path class="s-acc" d="M38 70a56 56 0 0 1 84 0" style="opacity:.35"/><path class="s-acc" d="M24 56a76 76 0 0 1 112 0" style="opacity:.2"/></svg></div></div></section>
+<section><div class="wrap detail-grid"><div><h2 class="h2">Ce que nous faisons</h2><ul class="points"><li><h3>Étude et plans</h3><p>Relevé des locaux, calcul des besoins et plan d'architecture avant toute installation.</p></li><li><h3>Câblage structuré</h3><p>Prises réseau, baies de brassage et cheminement des câbles réalisés proprement et repérés.</p></li><li><h3>Wi-Fi professionnel</h3><p>Couverture étudiée pièce par pièce, réseau séparé pour les visiteurs, gestion centralisée des bornes.</p></li><li><h3>Interconnexion de sites</h3><p>Relier plusieurs agences ou bâtiments de façon sécurisée pour partager fichiers et applications.</p></li></ul><div class="nextprev"><a href="../../pages/services/developpement-web-mobile.html"><span>Service précédent</span><strong>Développement web et mobile</strong></a><a href="../../pages/services/videosurveillance.html"><span>Service suivant</span><strong>Vidéosurveillance</strong></a></div></div><aside class="aside"><h3>Ce que vous recevez</h3><ul><li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg><span>Plan du réseau et repérage des prises</span></li><li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg><span>Tests de chaque liaison</span></li><li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg><span>Configuration sauvegardée des équipements</span></li><li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg><span>Accès administrateur remis au client</span></li></ul><a class="btn btn-primary" href="../../pages/contact.html?service=reseaux-informatiques">Décrire mon besoin</a><p class="small">Devis détaillé après une première visite ou un échange.</p></aside></div></section>
+
+<div class="band">
+  <svg class="curve" viewBox="0 0 400 200" aria-hidden="true"><path d="M0 150 C150 140 300 120 360 60 C380 40 390 20 380 0 C400 40 400 80 360 120 C300 170 150 180 0 170Z" fill="#6f9bff"/></svg>
+  <div class="wrap">
+    <div><h2>Un projet ou une panne ? Parlons-en aujourd'hui.</h2><p>Réponse rapide par téléphone, WhatsApp ou e-mail.</p></div>
+    <div class="ctas">
+      <a class="btn btn-white" href="tel:+242069626540"><svg class="icon" aria-hidden="true"><use href="#i-phone"/></svg>06 962 65 40</a>
+      <a class="btn btn-ghost" href="../../pages/contact.html">Écrire une demande</a>
+    </div>
+  </div>
+</div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="grid">
+      <div>
+        <img src="../../assets/img/logo-bersi-blanc.png" width="232" height="96" alt="Inform@ticien 3.0">
+        <p class="tag">Bersi, votre <b>Partenaire IT</b>…</p>
+      </div>
+      <div><h4>Services</h4><ul id="foot-svc"><li><a href="../../pages/services/support-technique.html">Support technique</a></li><li><a href="../../pages/services/developpement-web-mobile.html">Développement web et mobile</a></li><li><a href="../../pages/services/reseaux-informatiques.html">Réseaux informatiques</a></li><li><a href="../../pages/services/videosurveillance.html">Vidéosurveillance</a></li><li><a href="../../pages/services/marketing-communication.html">Marketing et communication</a></li><li><a href="../../pages/services/gestion-de-projet.html">Gestion de projet informatique</a></li><li><a href="../../pages/services/cybersecurite.html">Cybersécurité</a></li><li><a href="../../pages/services/installation-electrique.html">Installation électrique</a></li><li><a href="../../pages/services/energie-solaire.html">Panneaux solaires</a></li></ul></div>
+      <div><h4>Solutions</h4><ul id="foot-sol"><li><a href="../../pages/solutions/mon-registre.html">Mon Registre</a></li><li><a href="../../pages/solutions/equilibre.html">Équilibre</a></li><li><a href="../../pages/solutions/tunga.html">TUNGA</a></li><li><a href="../../pages/solutions/cultiva.html">Cultiva</a></li></ul><h4 style="margin-top:1.6rem">Le site</h4><ul><li><a href="../../pages/partenaires.html">Partenaires</a></li><li><a href="../../pages/a-propos.html">À propos</a></li><li><a href="../../pages/contact.html">Contact</a></li></ul></div>
+      <div><h4>Contact</h4><ul>
+        <li><a href="tel:+242069626540">06 962 65 40</a></li>
+        <li><a href="tel:+242067106192">06 710 61 92</a></li>
+        <li><a href="mailto:bersi-cg@outlook.fr">bersi-cg@outlook.fr</a></li>
+      </ul></div>
+    </div>
+    <div class="legal"><span>© <span id="year">2026</span> Bersi. Tous droits réservés.</span><span>Bureau d'études réseaux et systèmes d'information</span></div>
+  </div>
+</footer>
+
+<a class="wa" href="https://wa.me/242069626540" target="_blank" rel="noopener" aria-label="Écrire sur WhatsApp"><svg class="icon" aria-hidden="true"><use href="#i-chat"/></svg><span>WhatsApp</span></a>
+
+<script src="../../assets/js/main.js" defer></script>
+</body>
+</html>
